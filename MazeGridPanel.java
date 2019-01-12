@@ -15,7 +15,7 @@ public class MazeGridPanel extends JPanel{
 
 
 
-	// extra credit
+	
 	public void genDFSMaze() {
 		boolean[][] visited;
 		Stack<Cell> stack  = new Stack<Cell>();
@@ -23,7 +23,10 @@ public class MazeGridPanel extends JPanel{
 		stack.push(start);
 	}
 
-	//homework
+	//solves maze with stacks
+	//checks for a direction to move that has not been previously visited and is not a wall
+	//moves to cell and adds to stack
+	//at a dead end, pops off until there is a space where a new move option is available
 	public void solveMaze() {
 		Stack<Cell> stack  = new Stack<Cell>();
 		Cell start = maze[0][0];
